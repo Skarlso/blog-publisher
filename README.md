@@ -7,9 +7,10 @@ This action publishes a hugo blogs public folder to a given repositroy.
 The repository can be set by providing an `args` to the workflow like this:
 
 ```
-action "blog-builder" {
-  uses = "skarlso/blog-builder@master"
-  secrets = ["GITHUB_TOKEN"]
+action "blog-publisher" {
+  uses = "skarlso/blog-publisher@master"
+  needs = ["blog-builder"]
+  secrets = ["GITHUB_TOKEN", "PUSH_TOKEN"]
   args = ["Skarlso/skarlso.github.io.git"]
 }
 ```
