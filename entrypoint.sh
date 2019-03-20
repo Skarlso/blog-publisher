@@ -27,7 +27,7 @@ setup_git() {
 
 commit_website_files() {
   git add .
-  git commit -am "Travis build: $TRAVIS_BUILD_NUMBER"
+  git commit -am "Github Action Build ${GITHUB_SHA}"
 }
 
 upload_files() {
