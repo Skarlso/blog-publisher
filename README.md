@@ -14,3 +14,9 @@ action "blog-builder" {
 }
 ```
 
+# Secret
+
+This action also requires a token which has push access.
+
+The token is named `PUSH_TOKEN` and must be created via `secrets`.
+
