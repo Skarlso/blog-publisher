@@ -18,3 +18,4 @@ RUN \
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+CMD ["Skarlso/skarlso.github.io.git"]
