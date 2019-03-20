@@ -2,7 +2,7 @@ FROM golang:latest
 
 LABEL "name"="Hugo Pusher"
 LABEL "maintainer"="Gergely Brautigam <gergely@gergelybrautigam.com>"
-LABEL "version"="0.1.0"
+LABEL "version"="0.0.2"
 
 LABEL "com.github.actions.name"="Hugo Blog Publisher"
 LABEL "com.github.actions.description"="Push a hugo blog"
