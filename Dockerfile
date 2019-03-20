@@ -4,7 +4,7 @@ LABEL "name"="Hugo Pusher"
 LABEL "maintainer"="Gergely Brautigam <gergely@gergelybrautigam.com>"
 LABEL "version"="0.1.0"
 
-LABEL "com.github.actions.name"="Go Pusher"
+LABEL "com.github.actions.name"="Hugo Blog Publisher"
 LABEL "com.github.actions.description"="Push a hugo blog"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="green"
