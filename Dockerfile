@@ -7,7 +7,7 @@ LABEL "version"="0.1.0"
 LABEL "com.github.actions.name"="Go Pusher"
 LABEL "com.github.actions.description"="Push a hugo blog"
 LABEL "com.github.actions.icon"="package"
-LABEL "com.github.actions.color"="#E0EBF5"
+LABEL "com.github.actions.color"="green"
 
 RUN \
   apt-get update && \
