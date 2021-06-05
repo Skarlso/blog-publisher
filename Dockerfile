@@ -2,7 +2,7 @@ FROM golang:latest
 
 LABEL "name"="Hugo Pusher"
 LABEL "maintainer"="Gergely Brautigam <gergely@gergelybrautigam.com>"
-LABEL "version"="0.0.2"
+LABEL "version"="0.0.3"
 
 LABEL "com.github.actions.name"="Hugo Blog Publisher"
 LABEL "com.github.actions.description"="Push a hugo blog"
@@ -18,4 +18,4 @@ RUN \
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["Skarlso/skarlso.github.io.git"]
+# CMD ["Skarlso/skarlso.github.io"]
