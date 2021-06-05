@@ -1,6 +1,7 @@
 # action.yml
 name: 'Hugo blog publisher'
 description: 'Publish the public folder of a Hugo build output.'
+icon: "arrow-right-circle"
 inputs:
   repo:  # id of input
     description: 'The repository to publish to.'
