@@ -32,7 +32,8 @@ commit_website_files() {
 }
 
 upload_files() {
-  git push --quiet --set-upstream origin master
+  branch=$1
+  git push --quiet --set-upstream origin "${branch}"
 }
 
 echo "Beginning publishing workflow"
@@ -53,6 +54,6 @@ cp -R "${blog_path}"/* .
 echo "Copied over generated content from blog path. Committing."
 commit_website_files
 echo "Committed. Pushing."
-upload_files
+upload_files ${branch}
 echo "All done."
 exit 0
