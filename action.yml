@@ -1,0 +1,13 @@
+# action.yml
+name: 'Hugo blog publisher'
+description: 'Publish the public folder of a Hugo build output.'
+inputs:
+  repo:  # id of input
+    description: 'The repository to publish to.'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.repo }}
