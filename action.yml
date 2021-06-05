@@ -6,8 +6,13 @@ inputs:
     description: 'The repository to publish to.'
     required: true
     default: ''
+  branch:  # id of input
+    description: 'The branch to push to.'
+    required: false
+    default: 'main'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.repo }}
+    - ${{ inputs.branch }}
