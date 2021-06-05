@@ -33,7 +33,7 @@ commit_website_files() {
 
 upload_files() {
   branch=$1
-  git push --quiet --set-upstream origin "${branch}"
+  git push --quiet --set-upstream origin HEAD:"${branch}"
 }
 
 echo "Beginning publishing workflow"
